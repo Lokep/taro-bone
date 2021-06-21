@@ -29,7 +29,9 @@
     "dev:quickapp": "npm run build:quickapp -- --watch",
     "plop": "sh ./plop-templates/plop.sh",
     "prepare": "husky install",
-    "precommit": "eslint src/**/*.js"
+    "precommit": "eslint src/**/*.js",
+    "pretty": "yarn prettier --write .",
+    "lint": "./node_modules/.bin/eslint .eslintrc.js  --fix"
   },
   "husky": {
     "hooks": {
@@ -80,6 +82,8 @@
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "plop": "^2.7.4",
+    "prettier": "^2.3.1",
+    "pretty-quick": "^3.1.1",
     "stylelint": "9.3.0"
   },
   "config": {
